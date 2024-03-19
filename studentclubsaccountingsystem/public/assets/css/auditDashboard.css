@@ -1,0 +1,185 @@
+.dash-container{
+    height: 90vh;
+    margin-inline: 40px;
+    margin-top: 33px;
+}
+.dash-header{
+    height: 5%;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+.dash-header span{
+    font-size: x-large;
+    font-weight: 600;
+    color: #333;
+}
+.data-container{
+    height: 95%;
+    display: flex;
+}
+.data-represent{
+    width: 50%;
+    padding: 20px;
+}
+.noti-container{
+    width: 50%;
+    padding-inline: 30px;
+    padding-block-start: 20px;
+}
+.noti-container .noti-header{
+    font-size: large;
+    font-weight: 500;
+}
+.notifications{
+    width: 100%;
+    padding-inline-start: 30px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications .item{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 15px 20px 0px rgb( 0, 0, 0, .1 );
+    padding-inline: 30px;
+    padding-block: 15px;
+    width: 80%;
+}
+.notifications .item div .fullname{
+    font-weight:500;
+    color: #333;
+}
+.notifications .item div .member{
+    font-size: small;
+    margin-left: 10px;
+    color: rgb(131, 131, 131);
+}
+.notifications .item .date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: small;
+    color: rgb(131, 131, 131);
+}
+.notifications .item .content{
+    width: 100%;
+    margin-bottom: 0px;
+    color: rgb(131, 131, 131);
+    padding-bottom: 0px;
+    height: 30px;
+    font-size: small;
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+    .data-container{
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+    }
+    .dash-container{
+        height: 62vh;
+        margin-inline: 40px;
+        margin-top: 33px;
+        padding-top: 10px;
+        overflow-y: scroll;
+    }
+    .data-represent .total-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 20px;
+    }
+    .noti-container{
+        width: 100%;
+        margin-top: 150px;
+    }
+   
+    .data-represent .total-container .total{
+        display: flex;
+        width: 130px;
+        height: 90px;
+        margin-right: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: #242E39;
+        box-shadow:  11px 11px 24px #bebebe,
+                    -11px -11px 24px #ffffff;
+    
+    }
+}
+
+
+@media (max-height: 900px) and (min-height: 560px){
+    .data-container{
+        height: 90%;
+        display: flex;
+        /* overflow-y: scroll; */
+        /* border: 1px solid red; */
+    }
+    .dash-container{
+        height: 90vh;
+        margin-inline: 40px;
+        margin-top: 33px;
+        /* border: 1px solid red; */
+        overflow-y: scroll;
+    }
+    .dash-container::-webkit-scrollbar {
+        display: none;
+      }
+    .dash-header{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding-inline: 10px;
+        padding-block: 10px;
+        height: 10%;
+        /* border: 1px solid red; */
+    }
+    .notifications{
+        width: 100%;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+        padding-block: 10px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .notifications .item{
+        padding-inline: 25px;
+        width: 100%;
+    }
+    .notifications .item div .fullname{
+        font-size: 14px;
+        color: #333;
+    }
+   
+    .notifications .item .date{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 10px;
+        color: rgb(131, 131, 131);
+    }
+    .notifications .item .content{
+        width: 100%;
+        margin-bottom: 10px;
+        color: rgb(131, 131, 131);
+        padding-bottom: 0px;
+        height: 30px;
+        font-size: 12px;
+        padding-left: 0px;
+    }
+    .noti-container .noti-header{
+        font-size: large;
+        font-weight: 500;
+        margin-left: 0px;
+    }
+}
+
+

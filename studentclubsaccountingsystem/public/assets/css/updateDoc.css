@@ -1,0 +1,218 @@
+
+.addDocument{
+    height: 90vh;
+    margin-inline: 40px;
+    margin-top: 33px;
+ }
+ .button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 5em;
+    background: #242E39;
+    height: 40px;
+    border-width: 0;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+}
+.button2 a{
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    padding-inline: 30px;
+    border: none;
+    padding-block: 40px;
+    border-radius: 5em;
+    text-decoration: none;
+}
+  
+.button2:active {
+    color: #fff;
+    box-shadow: inset 4px 4px 12px #242E39,
+               inset -4px -4px 12px #ffffff;
+}
+  
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #333333;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+.button2 a:hover {
+    color: #fff;
+}
+  
+.button2:hover:before {
+    top: -35%;
+    background-color: #333333;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+  
+.button2:hover:after {
+    top: -45%;
+    background-color: #333333;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.form-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+}
+.form-title div span{
+    font-size: x-large;
+    font-weight: 600;
+    color: #333;
+}
+.form-title div svg{
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.addDoc{
+    height: 95%;
+    padding-inline: 20px;
+    margin-inline: 20px;
+    display: flex;
+}
+.addDoc form{
+    width: 50%;
+    margin-top: 20px;
+    padding-inline: 10px;
+}
+.addDoc .remarks{
+    width: 50%;
+    padding-inline: 20px;
+}
+.remark-content .item{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 15px 20px 0px rgb( 0, 0, 0, .1 );
+    padding-inline: 30px;
+    padding-block: 15px;
+    background:white;
+    width: 80%;
+}
+.remark-content .item div .fullname{
+    font-weight:500;
+    color: #333;
+}
+.remark-content .item .date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: small;
+    color: rgb(131, 131, 131);
+}
+.remark-content .item .content{
+    width: 100%;
+    margin-bottom: 0px;
+    color:rgb(131, 131, 131);
+    padding-bottom: 0px;
+    height: 30px;
+    padding-left: 0px;
+    font-size: small;
+}
+.addDoc form .form-row{
+    margin-block-end: 10px;
+}
+.addDoc form .form-row .col{
+    margin-right: 20px;
+}
+.addDoc form .file{
+    margin-block-end: 15px;
+}
+
+.addDoc form .button button{
+    padding-inline: 30px;
+    padding-block: 5px;
+    border-radius: 20px;
+    background:#242E39;
+    color: white;
+    border: none;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+}
+
+@media (max-height: 932px) and (min-height: 560px){
+    .addDoc{
+        height: 95%;
+        padding-inline: 0px;
+        margin-inline: 0px;
+        display: flex;
+        /* border: 1px solid red; */
+        padding-block: 20px;
+    }
+    .addDocument{
+        height: 90vh;
+        margin-inline: 40px;
+        margin-top: 33px;
+        /* border: 1px solid red; */
+     }
+     .addDoc form{
+        width: 50%;
+        margin-top: 0px;
+        padding-inline: 10px;
+    }
+    .addDoc .remarks{
+        width: 50%;
+        /* border: 1px solid red; */
+        padding-inline: 20px;
+        overflow-y: scroll;
+    }
+    .addDoc .remarks::-webkit-scrollbar {
+        display: none;
+      }
+    .remark-content .item{
+        width: 100%;
+    }
+    .remark-content .item div .fullname{
+        font-size: 14px;
+        color: #333;
+    }
+    .remark-content .item .date{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 10px;
+        color: rgb(131, 131, 131);
+    }
+    .remark-content .item .content{
+        width: 100%;
+        margin-bottom: 0px;
+        color:rgb(131, 131, 131);
+        padding-bottom: 0px;
+        height: 30px;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+}
